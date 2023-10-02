@@ -10,8 +10,9 @@ public class RectanglesApplication {
 	
 	public static void main(String[] args) {		
 		
-		if(args[0].equals("API")) {
-			SpringApplication.run(RectanglesApplication.class, args);
+		if(args.length == 1) {
+			if(args[0].equals("api"))
+				SpringApplication.run(RectanglesApplication.class, args);
 		} else {
 			new SpringApplicationBuilder(RectanglesApplication.class)
 			  .web(WebApplicationType.NONE)
