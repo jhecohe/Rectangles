@@ -1,0 +1,5 @@
+package com.jhecohe.application.service.model;
+
+public enum TypeEnum {
+	INTERSECTION, NO_INTERSECTION, CONTAINMENT, NO_CONTAINMENT, INTERSECTION_NO_CONTAINMENT, ADJACENT, NO_ADJACENT;
+}
