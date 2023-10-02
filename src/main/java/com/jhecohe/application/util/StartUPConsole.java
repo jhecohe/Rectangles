@@ -10,14 +10,14 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @Component
-public class StartUPConsole implements CommandLineRunner{
+public class StartUPConsole implements CommandLineRunner {
 
 	@Autowired
 	ValidateRectangleService validateRectangle;
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-		validateRectangle.validateByConsole();
+		if (args.length == 0)
+			validateRectangle.validateByConsole();
 	}
 }
